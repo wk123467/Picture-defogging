@@ -9,7 +9,7 @@
 
 1. 计算输入图片所有像素点位置在RGB三通道中的最小值，记为darkMat。例如，某个像素点位置的RGB三通道像素值为[r:34, g:45, b:18]，则该位置选择像素值为18
 2. 对darkMat进行最小值滤波(或引导滤波），得到的暗通道示意图如下所示
-！[image](https://img-blog.csdnimg.cn/e1df7771d9b14858a9f17c92de68f2db.png#pic_center)
+！[image](https://github.com/wk123467/Picture-defogging/blob/master/暗通道.PNG)
 ## 大气光值计算方法
 
 1. 取暗通道前0.1%的像素值位置
