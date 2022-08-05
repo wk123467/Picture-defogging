@@ -38,7 +38,9 @@ def guidedfilter(I, p, r = 81, eps = 0.001):
     m_b = cv2.boxFilter(b, -1, (r, r))
     return m_a * I + m_b
 dark_mat = np.min(img, 2)  # 得到暗通道图像
-#dark_mat = guidedfilter(dark_mat, zmMinFilterGray(dark_mat, 7))  # 使用引导滤波优化
+dark_mat = guidedfilter(dark_mat, zmMinFilterGray(dark_mat, 7))  # 使用引导滤波优化
+cv2.imshow("test", dark_mat)
+cv2.waitKey(0)
 #dark_mat = zmMinFilterGray(dark_mat, 7)
 
 
