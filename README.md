@@ -9,7 +9,9 @@
 
 1. 计算输入图片所有像素点位置在RGB三通道中的最小值，记为darkMat。例如，某个像素点位置的RGB三通道像素值为[r:34, g:45, b:18]，则该位置选择像素值为18
 2. 对darkMat进行最小值滤波(或引导滤波），得到的暗通道示意图如下所示
-！[image](https://github.com/wk123467/Picture-defogging/blob/master/暗通道.PNG)
+
+![image](https://github.com/wk123467/Picture-defogging/blob/master/暗通道.PNG)
+
 ## 大气光值计算方法
 
 1. 取暗通道前0.1%的像素值位置
@@ -18,8 +20,11 @@
 
 ## 大气折射率计算方法
 
-- 该计算方法为$t(x)=1 - \omega \space\times(\frac{darkMat}{A})$,其中$\omega$为控制去雾程度，因为图片中包含雾可以使图片拥有纵深，更真实。此时得到的大气折射示意图如下所示
-https://github.com/wk123467/Picture-defogging/blob/master/%E5%A4%A7%E6%B0%94%E6%8A%98%E5%B0%84%E5%9B%BE.PNG
+- 该计算方法为<img src="https://latex.codecogs.com/svg.image?t(x)=1&space;-&space;\omega&space;\space\times(\frac{darkMat}{A})" title="t(x)=1 - \omega \space\times(\frac{darkMat}{A})" />,其中<img src="https://latex.codecogs.com/svg.image?\omega" title="\omega" />为控制去雾程度，因为图片中包含雾可以使图片拥有纵深，更真实。此时得到的大气折射示意图如下所示
+
+![image](https://github.com/wk123467/Picture-defogging/blob/master/%E5%A4%A7%E6%B0%94%E6%8A%98%E5%B0%84%E5%9B%BE.PNG)
+
+
 
 ## 总结：
 
