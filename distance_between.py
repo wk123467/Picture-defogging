@@ -1,14 +1,13 @@
 import cv2
 import numpy as np
-from skimage.morphology import disk
-import skimage.filters.rank as sfr
+
 
 #参数
 kernel_size = 15
 Omega = 0.95
 
 #读取图片
-img = cv2.imread("9.PNG")
+img = cv2.imread("test.PNG")
 img = img / 255.0
 
 
@@ -39,8 +38,7 @@ def guidedfilter(I, p, r = 81, eps = 0.001):
     return m_a * I + m_b
 dark_mat = np.min(img, 2)  # 得到暗通道图像
 dark_mat = guidedfilter(dark_mat, zmMinFilterGray(dark_mat, 7))  # 使用引导滤波优化
-cv2.imshow("test", dark_mat)
-cv2.waitKey(0)
+
 #dark_mat = zmMinFilterGray(dark_mat, 7)
 
 
@@ -73,10 +71,12 @@ T = 1 - Omega * (dark_mat / A)
 T = np.maximum(T, 0.1)
 
 
+
 """
 获取去雾后的图片：J = (I - A) / T + A
 """
 T = np.array([T, T, T]).transpose(1, 2, 0)
 J = (img - A) / T + A
-cv2.imwrite('result.jpg', J)
+cv2.imshow("test", J)
+cv2.waitKey(0)
 
