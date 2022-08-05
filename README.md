@@ -8,7 +8,7 @@
 ## 原图
 <div align=center>
 
-![image](https://github.com/wk123467/Picture-defogging/blob/master/暗通道.PNG)
+![image](https://github.com/wk123467/Picture-defogging/blob/master/test.PNG)
 </div>
 
 ## 暗通道计算方法
