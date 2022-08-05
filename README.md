@@ -20,6 +20,7 @@ https://github.com/wk123467/Picture-defogging/blob/master/%E6%9A%97%E9%80%9A%E9%
 ## 大气折射率计算方法
 
 - 该计算方法为$t(x)=1 - \omega \space\times(\frac{darkMat}{A})$,其中$\omega$为控制去雾程度，因为图片中包含雾可以使图片拥有纵深，更真实。此时得到的大气折射示意图如下所示
+https://github.com/wk123467/Picture-defogging/blob/master/%E5%A4%A7%E6%B0%94%E6%8A%98%E5%B0%84%E5%9B%BE.PNG
 
 ## 总结：
 
