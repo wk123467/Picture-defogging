@@ -1,6 +1,5 @@
 # Picture-defogging：暗通道去雾法
 
-算法实现在本人的GitHub：https://github.com/wk123467/Picture-defogging.git
 
 ## 算法原理
 
