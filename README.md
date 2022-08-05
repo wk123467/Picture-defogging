@@ -4,7 +4,7 @@
 
 ## 算法原理
 
-该算法使用McCarney大气散射模型$I(x)=J(x)t(x)+A(1-t(x))$，其中$I(x)$代表待去雾图片、$J(x)$代表去雾图片、$t(x)$代表大气折射率、$A$代表大气光值，则可推断出去雾图片$J(x)=(I(x)-A)/t(x)+A$。要想推断出去雾图片，需要计算出大气折射率$t(x)$和大气光值$A$，而他们均需要待去雾图片的暗通道。
+该算法使用McCarney大气散射模型<img src="https://latex.codecogs.com/svg.image?I(x)=J(x)t(x)&plus;A(1-t(x))" title="I(x)=J(x)t(x)+A(1-t(x))" />，其中<img src="https://latex.codecogs.com/svg.image?I(x)" title="I(x)" />代表待去雾图片、<img src="https://latex.codecogs.com/svg.image?J(x)" title="J(x)" />代表去雾图片、<img src="https://latex.codecogs.com/svg.image?t(x)" title="t(x)" />代表大气折射率、<img src="https://latex.codecogs.com/svg.image?A" title="A" />代表大气光值，则可推断出去雾图片<img src="https://latex.codecogs.com/svg.image?J(x)=(I(x)-A)/t(x)&plus;A" title="J(x)=(I(x)-A)/t(x)+A" />。要想推断出去雾图片，需要计算出大气折射率<img src="https://latex.codecogs.com/svg.image?t(x)" title="t(x)" />和大气光值<img src="https://latex.codecogs.com/svg.image?A" title="A" />，而他们均需要待去雾图片的暗通道。
 
 ## 暗通道计算方法
 
